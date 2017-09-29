@@ -1,0 +1,75 @@
+<html>
+<head>
+	<title>Contact Us</title>
+	<link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+	<div class="container">
+		<header>
+			<div class="head">
+				<h1>Dwell Computer Store</h1>
+			</div>
+			<div class="head1">
+				<nav>
+					<ul>
+						<li><a href="index.html">Home</a></li>
+						<li><a href="Images.html">Image</a></li>
+						<li><a href="price.html">Price</a></li>
+						<li><a href="offers.html">Offers</a></li>
+						<li class="active"><a href="#">Contact Us</a></li>
+					</ul>
+					<div style="clear:both;"></div>
+				</nav>
+			</div>
+		</header>
+		<section class="contact">
+			<u><h2>Contact Us</h2></u>
+			<div class="contct-info">
+
+					<h4>Address: NEPAL</h4>
+					<h4>Phone: +9779812166013</h4>
+					<h4><a href="dwell0108@gmail.com">dwell0108@gmail.com</a></h4>
+
+			</div>
+			<form class="form"  action="#" method="post" action="#" method="post" onsubmit="return submitForm()">
+				<div class="m-b-15"><label for="name">Name: </label><input type="text" id="name" name="name" placeholder="Your Name" required></div>
+				<div class="m-b-15"><label for="email">Email: </label><input type="text" id="email" name="email" placeholder="Email address" required></div>
+				<div class="m-b-15"><label for="subject">Subject: </label><input type="text" id="subject" name="subject" placeholder="Subject" required></div>
+				<div class="m-b-15"><label for="message">Message: </label><textarea rows="5" id="message" placeholder="Message" name="message" ></textarea></div>
+				<input type="submit" value="Submit" >
+			</form>
+		</section>
+		<footer><nav>
+			<u><h1>Follow Us on:</h1></u>
+			<ul>
+			<li><a href="https://www.facebook.com/">facebook</a></li>
+				<li><a href="https://twitter.com/">twitter</a></li>
+				<li><a href="https://google.com/">googleplus</a></li>
+				<li><a href="https://instagram.com/">instagram</a></li>
+				<li><a href="https://youtube.com/">youtube</a></li>
+			</ul><br>
+			<h3> 2017 Made by: Dharamdev Mahato</h3></nav>
+		</footer>
+		<script>
+			function submitForm() {
+				var name = document.getElementById("name");
+				var email = document.getElementById("email");
+				var subject = document.getElementById("subject");
+				var message = document.getElementById("message");
+				if (name.value != '') {
+					if (email.value != '') {
+						if (subject.value != '') {
+							if (message.value != '') {
+								return true;
+							}
+						}
+					}
+				}
+				alert("All Fields must be filled!!!");
+				return false;
+			}
+
+		</script>
+	</div>
+</body>
+</html>
